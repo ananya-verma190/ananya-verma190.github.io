@@ -1,0 +1,41 @@
+---
+layout: default
+---
+<section id="home">
+<h1>Hi, I’m Ananya.</h1>
+<p class="lead">I design and verify digital hardware. This is where I share what I’m building and learning.</p>
+</section>
+
+<section id="about">
+<h2>About</h2>
+<p>I’m a digital hardware engineer working on RTL design, verification, and toolchain setup. Replace this paragraph with your story: what got you into hardware, what you’re working on now, and what you’d like to do next.</p>
+<p>Elsewhere: <a href="#">GitHub</a> · <a href="#">LinkedIn</a> · <a href="#">Email</a></p>
+</section>
+
+<section id="projects">
+<h2>Projects</h2>
+<div>
+<div class="proj"><h3><a href="#">Project one</a></h3><p>One or two lines on what it does and why it’s interesting.</p><div class="tags">SystemVerilog · Verification</div></div>
+<div class="proj"><h3><a href="#">Project two</a></h3><p>Add what you built, the key challenge, and the result.</p><div class="tags">Embedded · Hardware</div></div>
+<div class="proj"><h3><a href="#">Project three</a></h3><p>Link each project to a repo or a write-up.</p><div class="tags">Tag · Tag</div></div>
+</div>
+</section>
+
+<section id="blog">
+<h2>Blog</h2>
+{% for post in site.posts %}
+<div class="post"><a href="{{ post.url | relative_url }}">{{ post.title }}</a><time>{{ post.date | date: "%Y-%m-%d" }}</time></div>
+{% else %}
+<p class="empty">No posts yet.</p>
+{% endfor %}
+</section>
+
+<section id="gallery">
+<h2>Gallery</h2>
+<div class="gal">
+<div class="gi"><button class="thumb" type="button" aria-label="View Photo title one in full"><img src="{{ '/images/photo-1.svg' | relative_url }}" alt="Photo title one"></button><div class="gc"><h3>Photo title one</h3><p>A short caption about this photo: where it was taken or what it shows.</p></div></div>
+<div class="gi"><button class="thumb" type="button" aria-label="View Photo title two in full"><img src="{{ '/images/photo-2.svg' | relative_url }}" alt="Photo title two"></button><div class="gc"><h3>Photo title two</h3><p>Portrait photos get cropped in the preview and shown in full when clicked.</p></div></div>
+<div class="gi"><button class="thumb" type="button" aria-label="View Photo title three in full"><img src="{{ '/images/photo-3.svg' | relative_url }}" alt="Photo title three"></button><div class="gc"><h3>Photo title three</h3><p>Wide photos work the same way.</p></div></div>
+<div class="gi"><button class="thumb" type="button" aria-label="View Photo title four in full"><img src="{{ '/images/photo-4.svg' | relative_url }}" alt="Photo title four"></button><div class="gc"><h3>Photo title four</h3><p>Replace these placeholders with your own pictures and captions.</p></div></div>
+</div>
+</section>

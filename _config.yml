@@ -1,0 +1,9 @@
+title: Ananya
+lang: en
+permalink: /blog/:title/
+defaults:
+  - scope:
+      path: ""
+      type: "posts"
+    values:
+      layout: "post"

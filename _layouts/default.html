@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>{% if page.title %}{{ page.title }} · {% endif %}{{ site.title }}</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Source+Serif+4:wght@400;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="{{ '/assets/style.css' | relative_url }}">
+</head>
+<body>
+<script>NekoType="socks"</script>
+<h1 id=nl><script src="https://webneko.net/n20171213.js"></script><a href="https://webneko.net">Neko</a></h1>
+<div class="wrap">
+<nav><a href="{{ '/' | relative_url }}#home">Home</a><a href="{{ '/' | relative_url }}#blog">Blog</a><a href="{{ '/' | relative_url }}#projects">Projects</a><a href="{{ '/' | relative_url }}#gallery">Gallery</a><a href="{{ '/' | relative_url }}#about">About</a></nav>
+
+{{ content }}
+
+<footer><div class="badges"><a href="{{ '/' | relative_url }}#about"><img src="{{ '/assets/badges/human.svg' | relative_url }}" alt="Made by a human" width="88" height="31"></a><a href="https://caffcalc.com/" target="_blank" rel="noopener"><img src="{{ '/assets/badges/coffee.gif' | relative_url }}" alt="Powered by coffee" width="88" height="31"></a><a href="https://www.zerotoasiccourse.com/terminology/asic/" target="_blank" rel="noopener"><img src="{{ '/assets/badges/asic.gif' | relative_url }}" alt="Building full ASICs from scratch" width="88" height="31"></a><a href="https://open.spotify.com/" target="_blank" rel="noopener"><img src="{{ '/assets/badges/spotify.svg' | relative_url }}" alt="Spotify" width="88" height="31"></a></div>© {{ 'now' | date: '%Y' }} Ananya · Socks the cat by Gracie, via <a href="https://webneko.net" target="_blank" rel="noopener">Web Neko</a></footer>
+</div>
+<div id="lb" hidden><img alt=""><p></p></div>
+<script src="{{ '/assets/site.js' | relative_url }}"></script>
+</body>
+</html>
