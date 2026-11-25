@@ -3,13 +3,14 @@ layout: default
 ---
 <section id="home">
 <h1>Hi, I’m Ananya.</h1>
-<p class="lead">I design and verify digital hardware. This is where I share what I’m building and learning.</p>
+{% capture home_md %}{% include home.md %}{% endcapture %}
+<div class="prose home-text">{{ home_md | markdownify }}</div>
 </section>
 
 <section id="about">
 <h2>About</h2>
-<p>I’m a digital hardware engineer working on RTL design, verification, and toolchain setup. Replace this paragraph with your story: what got you into hardware, what you’re working on now, and what you’d like to do next.</p>
-<p>Elsewhere: <a href="#">GitHub</a> · <a href="#">LinkedIn</a> · <a href="#">Email</a></p>
+{% capture about_md %}{% include about.md %}{% endcapture %}
+<div class="prose">{{ about_md | markdownify }}</div>
 </section>
 
 <section id="projects">
