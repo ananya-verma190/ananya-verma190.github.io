@@ -2,7 +2,7 @@
 box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px);color-scheme:dark}
 html{scroll-padding-top:env(safe-area-inset-top,0px);scroll-behavior:smooth}
 *{box-sizing:border-box}
-body{margin:0;background:var(--bg);color:var(--fg);font:18px/1.8 "Source Serif 4",Georgia,serif}
+body{margin:0;background:var(--bg);color:var(--fg);font:16px/1.7 "Source Serif 4",Georgia,serif}
 .wrap{max-width:880px;margin:0 auto;padding:0 20px;min-height:100vh;min-height:100dvh;display:flex;flex-direction:column}
 nav{display:flex;gap:20px;align-items:center;padding:20px 0;border-bottom:1px solid var(--line);font-size:15px}
 nav b{margin-right:auto;font-size:17px}
@@ -27,7 +27,8 @@ h2{font-size:13px;letter-spacing:.12em;text-transform:uppercase;color:var(--mute
 .post{display:flex;gap:16px;justify-content:space-between;padding:14px 0}
 .post time{font-family:ui-monospace,Menlo,monospace;font-size:13px;color:var(--muted);white-space:nowrap}
 footer{padding:20px 0 12px;color:var(--muted);font-size:12px;line-height:1.4}
-.badges{display:flex;flex-wrap:wrap;gap:8px;justify-content:center;margin-bottom:10px}
+.badges{display:flex;flex-wrap:nowrap;gap:6px;justify-content:center;margin-bottom:10px}
+.badges a{flex:0 1 88px;min-width:0;display:block}
 .badges a:hover{text-decoration:none}
 .gal{display:flex;flex-direction:column;gap:6px}
 .gi{display:flex;gap:18px;align-items:center;padding:10px 0}
@@ -40,7 +41,7 @@ footer{padding:20px 0 12px;color:var(--muted);font-size:12px;line-height:1.4}
 #lb[hidden]{display:none}
 #lb img{max-width:94vw;max-height:78vh;object-fit:contain;border-radius:6px}
 #lb p{margin:0;color:var(--fg);font-size:.95rem;text-align:center;max-width:640px}
-.badges img{width:88px;height:31px;image-rendering:pixelated;display:block}
+.badges img{width:100%;height:auto;image-rendering:pixelated;display:block}
 
 .postpage{flex:1 0 auto;padding:24px 0 8px}
 .postpage .back{margin:0 0 4px;font-size:15px}
