@@ -13,9 +13,9 @@ nav a:hover{text-decoration:none;color:var(--fg)}
 nav a.on{color:var(--accent);border-bottom:2px solid var(--accent);padding-bottom:2px}
 section{display:none;padding:24px 0 8px}
 section.active{display:block;flex:1 0 auto}
-h1{font-size:2.4rem;line-height:1.15;margin:40px 0 12px}
+h1{font-size:1.8rem;line-height:1.2;margin:28px 0 10px}
 h2{font-size:13px;letter-spacing:.12em;text-transform:uppercase;color:var(--muted);margin:0 0 20px}
-.lead{font-size:1.2rem;color:var(--muted);margin:0}
+.lead{font-size:1rem;color:var(--muted);margin:0}
 .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:16px}
 .card{background:var(--card);border:1px solid var(--line);border-radius:10px;padding:18px}
 .card h3{margin:0 0 6px;font-size:1.1rem}
