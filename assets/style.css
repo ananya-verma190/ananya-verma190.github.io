@@ -61,5 +61,4 @@ footer{padding:20px 0 12px;color:var(--muted);font-size:12px;line-height:1.4}
 .prose th,.prose td{border:1px solid var(--line);padding:6px 12px;text-align:left}
 .empty{color:var(--muted)}
 
-#nl{margin:0;font-size:12px;line-height:1.2;font-weight:400}#nl{margin:0;height:44px;font-size:12px;line-height:1.2;font-weight:400}
-img[src*="webneko"]{pointer-events:none}
+#nl{margin:0;font-size:12px;line-height:1.2;font-weight:400}
