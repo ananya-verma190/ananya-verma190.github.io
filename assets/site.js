@@ -14,7 +14,8 @@
     addEventListener('hashchange',show);
     show();
   }else{
-    var a=document.querySelector('nav a[href$="#blog"]');
+    var t=location.pathname.indexOf('/projects/')>-1?'projects':'blog';
+    var a=document.querySelector('nav a[href$="#'+t+'"]');
     if(a)a.classList.add('on');
   }
 })();
