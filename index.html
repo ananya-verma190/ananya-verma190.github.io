@@ -15,9 +15,12 @@ layout: default
 <section id="projects">
 <h2>Projects</h2>
 <div>
-<div class="proj"><h3><a href="#">Project one</a></h3><p>One or two lines on what it does and why it’s interesting.</p><div class="tags">SystemVerilog · Verification</div></div>
-<div class="proj"><h3><a href="#">Project two</a></h3><p>Add what you built, the key challenge, and the result.</p><div class="tags">Embedded · Hardware</div></div>
-<div class="proj"><h3><a href="#">Project three</a></h3><p>Link each project to a repo or a write-up.</p><div class="tags">Tag · Tag</div></div>
+{% assign projs = site.projects | sort: "order" %}
+{% for p in projs %}
+<div class="proj"><h3><a href="{{ p.url | relative_url }}">{{ p.title }}</a></h3><p>{{ p.description }}</p>{% if p.tags %}<div class="tags">{{ p.tags | join: " · " }}</div>{% endif %}</div>
+{% else %}
+<p class="empty">No projects yet.</p>
+{% endfor %}
 </div>
 </section>
 
