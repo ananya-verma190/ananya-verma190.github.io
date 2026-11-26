@@ -27,6 +27,7 @@ h2{font-size:1.5rem;letter-spacing:.08em;text-transform:uppercase;color:var(--mu
 .post{display:flex;gap:16px;justify-content:space-between;padding:14px 0}
 .post time{font-family:ui-monospace,Menlo,monospace;font-size:13px;color:var(--muted);white-space:nowrap}
 footer{padding:20px 0 12px;color:var(--muted);font-size:12px;line-height:1.4}
+footer{margin-top:32px}
 .badges{display:flex;flex-wrap:nowrap;gap:6px;justify-content:center;margin-bottom:10px}
 .badges a{flex:0 1 88px;min-width:0;display:block}
 .badges a:hover{text-decoration:none}
@@ -65,7 +66,7 @@ footer{padding:20px 0 12px;color:var(--muted);font-size:12px;line-height:1.4}
 #nl{margin:0;font-size:12px;line-height:1.2;font-weight:400}
 
 .home-text p{color:var(--muted)}
-#home h1{margin-top:0}
+#home h1{margin-top:0;font-size:2.2rem}
 
 .proj:first-child{padding-top:0}
 h2 + .post{padding-top:0}
