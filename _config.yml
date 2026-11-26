@@ -10,6 +10,9 @@ collections:
   projects:
     output: true
     permalink: /projects/:name/
+  gallery:
+    output: false
+
 defaults:
   - scope:
       path: ""

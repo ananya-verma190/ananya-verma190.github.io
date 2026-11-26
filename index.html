@@ -37,9 +37,11 @@ layout: default
 <section id="gallery">
 <h2>Gallery</h2>
 <div class="gal">
-<div class="gi"><button class="thumb" type="button" aria-label="View Photo title one in full"><img src="{{ '/images/photo-1.svg' | relative_url }}" alt="Photo title one"></button><div class="gc"><h3>Photo title one</h3><p>A short caption about this photo: where it was taken or what it shows.</p></div></div>
-<div class="gi"><button class="thumb" type="button" aria-label="View Photo title two in full"><img src="{{ '/images/photo-2.svg' | relative_url }}" alt="Photo title two"></button><div class="gc"><h3>Photo title two</h3><p>Portrait photos get cropped in the preview and shown in full when clicked.</p></div></div>
-<div class="gi"><button class="thumb" type="button" aria-label="View Photo title three in full"><img src="{{ '/images/photo-3.svg' | relative_url }}" alt="Photo title three"></button><div class="gc"><h3>Photo title three</h3><p>Wide photos work the same way.</p></div></div>
-<div class="gi"><button class="thumb" type="button" aria-label="View Photo title four in full"><img src="{{ '/images/photo-4.svg' | relative_url }}" alt="Photo title four"></button><div class="gc"><h3>Photo title four</h3><p>Replace these placeholders with your own pictures and captions.</p></div></div>
+{% assign shots = site.gallery | sort: "order" %}
+{% for g in shots %}
+<div class="gi"><button class="thumb" type="button"><img src="{{ '/images/' | append: g.image | relative_url }}" alt="{{ g.title }}"></button><div class="gc"><h3>{{ g.title }}</h3><p>{{ g.caption }}</p></div></div>
+{% else %}
+<p class="empty">No photos yet.</p>
+{% endfor %}
 </div>
 </section>
