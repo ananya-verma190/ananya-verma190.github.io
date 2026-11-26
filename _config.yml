@@ -1,6 +1,11 @@
-title: Ananya
+title: Ananya Verma
 lang: en
 permalink: /blog/:title/
+
+kramdown:
+  input: GFM
+  hard_wrap: true
+
 collections:
   projects:
     output: true
