@@ -22,4 +22,4 @@ About this website:
 Credits:
 - I thank my friend Pranav for encouraging me to make a website of my own. I realized how much more deeply I will be able to understand things by sharing them.
   This website is inspired by [prawns.dev](prawns.dev) and [essenceia.github.io](essenceia.github.io).
-- Socks, the cat, is by Gracie, via [Web Neko](https://webneko.net/)
+- Socks (the cat) is by Gracie, via [Web Neko](https://webneko.net/).
